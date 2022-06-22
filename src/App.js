@@ -7,6 +7,7 @@ import Singin from "./routes/Singin";
 import Singup from "./routes/Singup";
 import Account from "./routes/Account";
 import axios from "axios";
+import CoinPage from "./routes/CoinPage";
 function App() {
   const [coins, setCoins] = useState([]);
   const url =
@@ -27,6 +28,9 @@ function App() {
         <Route path='/singin' element={<Singin />} />
         <Route path='/singup' element={<Singup />} />
         <Route path='/account' element={<Account />} />
+        <Route path='/coin/:coinId' element={<CoinPage />}>
+          <Route path=':coinId' />
+        </Route>
       </Routes>
     </ThemeProvider>
   );

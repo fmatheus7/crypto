@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='rounded-div flex items-center justify-between h-20 font-bold'>
+    <div className='rounded-div flex items-center justify-between h-20 font-bold bg-slate-600'>
       <Link to='/'>
         <h1 className='text-2xl'>Cryptobase</h1>
       </Link>
